@@ -95,3 +95,18 @@ Error: FFmpeg/avconv not found!
 
 Video URL: https://www.youtube.com/watch?v=kOCkne-Bku4
 ------------------------
+[CALLER: ultimatemusic.js:321:23 | MS: 1616394324982 | DATE: 3/22/2021, 6:25:24 AM]
+------------------------
+FFmpeg/avconv not found!
+EXTRA INFO:
+Error: FFmpeg/avconv not found!
+    at Function.getInfo (C:\Users\simon\Downloads\bot2\node_modules\prism-media\src\core\FFmpeg.js:130:11)
+    at Function.create (C:\Users\simon\Downloads\bot2\node_modules\prism-media\src\core\FFmpeg.js:143:38)
+    at new FFmpeg (C:\Users\simon\Downloads\bot2\node_modules\prism-media\src\core\FFmpeg.js:44:27)
+    at AudioPlayer.playUnknown (C:\Users\simon\Downloads\bot2\node_modules\discord.js\src\client\voice\player\BasePlayer.js:47:20)
+    at VoiceConnection.play (C:\Users\simon\Downloads\bot2\node_modules\discord.js\src\client\voice\util\PlayInterface.js:71:28)
+    at play (C:\Users\simon\Downloads\bot2\addons\ultimatemusic.js:283:44)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+Video URL: https://www.youtube.com/watch?v=kOCkne-Bku4
+------------------------
