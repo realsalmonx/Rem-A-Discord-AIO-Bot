@@ -1,0 +1,82 @@
+[CALLER: [as | MS: 1616391185850 | DATE: 3/22/2021, 5:33:05 AM]
+-----------------------------------------------------------------
+YAMLSemanticError: Map keys must be unique; "Enabled" is repeated
+EXTRA INFO:
+Promise {
+  <rejected> YAMLSemanticError: Map keys must be unique; "Enabled" is repeated
+      at Object.resolveMap [as resolve] (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1696:27)
+      at resolveByTagName (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1430:25)
+      at resolveTag (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1460:17)
+      at resolveNodeValue (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1581:23)
+      at resolveNode (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1629:15)
+      at resolveBlockMapItems (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1823:38)
+      at Object.resolveMap [as resolve] (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1658:79)
+      at resolveByTagName (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1430:25)
+      at resolveTag (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1460:17)
+      at resolveNodeValue (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1581:23)
+      at Object.resolveNode (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\resolveSeq-d03cb037.js:1629:15)
+      at parseContents (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\Document-9b4560a1.js:357:30)
+      at Document.parse (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\Document-9b4560a1.js:615:5)
+      at parseDocument (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\index.js:44:37)
+      at Object.parse (C:\Users\simon\Downloads\bot2\node_modules\yaml\dist\index.js:55:15)
+      at new Config (C:\Users\simon\Downloads\bot2\modules\CustomConfig.js:34:30)
+      at Object.module.exports [as run] (C:\Users\simon\Downloads\bot2\addons\ultimatetickets.js:27:20)
+      at Object.set (C:\Users\simon\Downloads\bot2\modules\handlers\AddonHandler.js:75:23) {
+    source: Collection {
+      error: null,
+      range: [Range],
+      valueRange: [Range],
+      props: [],
+      type: 'MAP',
+      value: null,
+      items: [Array],
+      resolved: [YAMLMap]
+    }
+  }
+}
+-----------------------------------------------------------------
+[CALLER: RequestHandler.js:170:25 | MS: 1616393579091 | DATE: 3/22/2021, 6:12:59 AM]
+--------------------------------
+DiscordAPIError: Unknown Message
+EXTRA INFO:
+Promise {
+  <rejected> DiscordAPIError: Unknown Message
+      at RequestHandler.execute (C:\Users\simon\Downloads\bot2\node_modules\discord.js\src\rest\RequestHandler.js:170:25)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    method: 'delete',
+    path: '/channels/808166826617733165/messages/823439074391752774',
+    code: 10008,
+    httpStatus: 404
+  }
+}
+--------------------------------
+[CALLER: RequestHandler.js:170:25 | MS: 1616393584542 | DATE: 3/22/2021, 6:13:04 AM]
+--------------------------------
+DiscordAPIError: Unknown Message
+EXTRA INFO:
+Promise {
+  <rejected> DiscordAPIError: Unknown Message
+      at RequestHandler.execute (C:\Users\simon\Downloads\bot2\node_modules\discord.js\src\rest\RequestHandler.js:170:25)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    method: 'delete',
+    path: '/channels/808166826617733165/messages/823439095413735424',
+    code: 10008,
+    httpStatus: 404
+  }
+}
+--------------------------------
+[CALLER: RequestHandler.js:170:25 | MS: 1616393589726 | DATE: 3/22/2021, 6:13:09 AM]
+--------------------------------
+DiscordAPIError: Unknown Message
+EXTRA INFO:
+Promise {
+  <rejected> DiscordAPIError: Unknown Message
+      at RequestHandler.execute (C:\Users\simon\Downloads\bot2\node_modules\discord.js\src\rest\RequestHandler.js:170:25)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    method: 'delete',
+    path: '/channels/808166826617733165/messages/823439116980453376',
+    code: 10008,
+    httpStatus: 404
+  }
+}
+--------------------------------

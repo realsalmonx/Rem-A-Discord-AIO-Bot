@@ -1,0 +1,205 @@
+YouTubeAPIKey: AIzaSyChG6u4_TWDisFgZEY8w8-T2imdRZ2st8I
+NowPlayingMessages: true
+PreventSongDuplicates: false
+PlayFirstResult: false
+VoteSkip:
+  Ping: true
+  # Should the bot ping the members in the voice channel?
+  TimeLimit: 30
+  # Time everyone has to vote to skip or not skip in seconds
+AutoPlay:
+  Enabled: false
+  Playlist: PUT-YOUTUBE-PLAYLIST-LINK-HERE
+  VoiceChannel: music
+  TextChannel: music
+  NowPlayingMessages: false
+  AnnounceStartOrRestart: true
+  StartBackUp: true
+Lang:
+  Errors:
+    NotInVoiceChannel: You must be in a voice channel to run this command.
+    NotPlayingMusic: The bot is currently not playing music.
+    AlreadyInRepeat: The bot is already set to that repeat mode!
+    NotEnoughSongsToShuffle: There are not enough songs in the queue to shuffle! You
+      must have at least 3 songs in the queue.
+    CouldntGetSongLyrics: An error occured while getting the song lyrics. Try again later
+    CantRemoveFirstSong: You cannot remove the first song from the queue!
+    InvalidSkiptoPosition: That is not a valid position in the queue!
+    CantSkiptoPosition: You cannot use the skipto command to skip to that postion!
+    InvalidVolumeInt: You must provide an integer between 0 and 10.
+    CantSkip: You can not skip because the music queue only has one song.
+    NotPaused: The bot is already playing music.
+    AlreadyPlayingMusic: I am already playing music in another voice channel.
+    InvalidPermissions: I do not have the required permissions to join or speak in
+      this voice channel.
+    NotAllInfoObtained: Information for one of the songs requested could not be found.
+    NoSearchResults:
+      - No search results could be found for that search query
+      - Top 10 search results for `{search}` could not be found
+    InvalidPageNumber: That is not a valid page number!
+    NotInRepeat: The bot is currently not on any repeat mode
+  Embeds:
+    NowPlaying:
+      Title: "🎶 Now playing:"
+      RequestBy: Requested By
+      Length: "Song Length: {length}"
+    AddedToQueue:
+      Song: "📜 Added to Queue:"
+      Playlist: "📜 Added Playlist to Queue:"
+      PlaylistLength: "{amount} songs in playlist"
+    Top10:
+      Title: Top Results
+      Description: >-
+        Displaying top search results for `{search}`. Select a video to add to
+        the queue by responding with it's corresponding number. 
+
+
+        {results}
+    Queue:
+      Title: "Music Queue (Page #{page})"
+      Description: |-
+        {queue}
+        Repeat Mode: `{mode}`
+        {extra}
+      ExtraInfo_Queue: "*The queue will be repeated after it's over!*"
+      ExtraInfo_Song: "*The current track will be repeated after it's over!*"
+      CurrentlyPlaying: |+
+        🎶 **Currently Playing:** [{song-name}]({song-url})
+
+    Pause:
+      Title: "⏸️ Paused song:"
+      Description: "{song-name}"
+    Resume:
+      Title: "🎶 Resumed playing:"
+      Description: "{song-name}"
+    Skip:
+      Title: ⏭️ Skipping song...
+    StoppedMusic:
+      Title: ⏹️ Music Stopped
+      Description: You stopped the music queue!
+    CurrentVolume:
+      Title: 🔈 Current Volume
+      Description: |-
+        The current volume is **{volume}**.
+        Set the volume with ``-volume <0-10>``
+    VolumeSet:
+      Title: 🔈 Volume Set
+      Description: The volume has been set to **{volume}**.
+    CurrentlyPlaying:
+      Title: 🎵 Now Playing
+      Fields:
+        - Title
+        - Creator
+        - Length
+        - Requested By
+    Skipto:
+      Title: ":track_next: Songs Skipped"
+      Description: You skipped to position `{position}` in the queue
+    Remove:
+      Title: ":wastebasket: Song Removed"
+      Description: You removed the song at position `{position}` in the queue
+    Lyrics:
+      Title: "{song-name} Lyrics"
+      Description: |-
+        **Artist:** {artist}
+
+        {lyrics}
+    Shuffle:
+      Title: Songs Shuffled
+      Description: |-
+        The songs have been suffled!
+
+        **New Queue:**
+        {shuffledqueue}
+    Repeat:
+      Title: 🔁 Repeat
+      Description: |-
+        You turned on `{type}` repeat! Turn off repeat mode with **-repeat off**
+        {extra}
+      ExtraInfo_Song: The current track will be repeated till this is turned off!
+      ExtraInfo_Queue: The queue and songs added to the queue will be repeated once
+        the queue ends!
+    SongRepeating:
+      Title: 🔁 Song Repeat
+      Description: Repeating the current track...
+    QueueRepeating:
+      Title: 🔁 Queue Repeat
+      Description: Repeating the saved queue...
+    Restart:
+      Title: 🔂 Song Restarted
+      Description: The current track has been restarted!
+    Voteskip:
+      Title: Vote Skip
+      Description: >-
+        All users in the voice channel have **30 seconds** to cast in their
+        votes! If more people vote to skip the song than not to skip the song,
+        the song will be skipped.
+
+
+        :white_check_mark:: **Skip the song**
+
+        :x:: **Don't skip the song**
+
+
+        **Time left:** Less than **{timeleft}** seconds
+    Voteskip_Skipped:
+      Title: ":track_next: Song Skipped"
+      Description: More people voted to skip the song than people voted to **not**
+        skip the song! The song is now being skipped...
+    Voteskip_NotSkipped:
+      Title: ":no_entry_sign: Song Not Skipped"
+      Description: More people voted to **not** skip the song than people voted to
+        skip the song! The song will **not** be skipped.
+    QueueOver:
+      Title: ⏹️ Stopping Music
+      Description: The music queue is now over
+    Join:
+      Title: ☎️ Joined voice channel
+    Leave:
+      Title: 👋 Leaving voice channel
+  AutoPlay:
+    Starting: Starting auto play...
+    Restarting: Restarting auto play...
+    Stopping: Stopping auto play...
+    InvalidAutoplayPlaylist: The set auto play playlist is not a valid youtube playlist link
+    AutoPlay: Auto Play
+  PreventSongDuplicates:
+    PlaylistAlreadyInQueue: You can not add this playlist because all the songs are
+      already in the queue
+    PlaylistSongsFiltered: "**{amount}** videos were filtered out because they were
+      already in the playlist."
+    AlreadyInQueue: You can not add this song because it already exists in the queue!
+  CommandDescriptions:
+    play: Play a song in the voice channel you are in.
+    stop: Stop the bot from playing music.
+    queue: View the song queue
+    skip: Skip to a certain song in the queue
+    pause: Pause the current song
+    resume: Resume the current song
+    volume: Set the bot's volume
+    nowplaying: View the current song
+    skipto: Skip to a song in the queue
+    removesong: Remove a song from the queue
+    lyrics: View the lyrics for a song
+    shuffle: Shuffle the song queue
+    repeat: Set repeat mode for the current song
+    voteskip: Vote to skip the current song
+    restart: Replay the current song
+    join: Have the bot join your voice channel
+RequiredRanks:
+  play: "@everyone"
+  stop: "@everyone"
+  queue: "@everyone"
+  skip: "@everyone"
+  pause: "@everyone"
+  resume: "@everyone"
+  volume: "@everyone"
+  nowplaying: "@everyone"
+  skipto: "@everyone"
+  removesong: "@everyone"
+  lyrics: "@everyone"
+  shuffle: "@everyone"
+  repeat: "@everyone"
+  voteskip: "@everyone"
+  restart: "@everyone"
+  join: "@everyone"

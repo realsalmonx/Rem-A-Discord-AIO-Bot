@@ -1,0 +1,47 @@
+Transcripts:
+  Created: |-
+    A cloud-based transcript has been created for {channel}
+
+    {domain}/transcript/{transcript_id}
+  Sent_To_Creator: ":white_check_mark: **Sent to creator**"
+  Unable_To_Send_To_Creator: ":x: **Not sent to creator**"
+React_To_Open_Ticket:
+  Title: Create a ticket
+  Category_Description: "React with :pencil2: to create a ticket for the {category} category"
+  Normal_Description: "React with :pencil2: to create a ticket"
+Tickets:
+  Answers:
+    Attachments: |-
+      **Attachments**
+      {attachments}
+Response_Time:
+  Title: Response Time
+  Description: Our average ticket response time is **{response_time}**.
+AutoClose:
+  Title: Closing
+  Description: "{user}, this ticket will be closed in 24 hours."
+Up_Down:
+  Moved_Up:
+    Title: Ticket Moved Up
+    Description: This ticket has been moved from the **{old}** category to the
+      **{new}** category.
+  Moved_Down:
+    Title: Ticket Moved Down
+    Description: This ticket has been moved from the **{old}** category to the
+      **{new}** category.
+Move:
+  Moved:
+    Title: Ticket Moved
+    Description: This ticket has been moved from the **{old}** category to the
+      **{new}** category.
+Choose_Category_Reminder:
+  Title: Choose a category
+  Description: "{user}, please choose a category!"
+Commissions:
+  Listing:
+    Title: New Commission
+    Description: React with ✅ to claim this commission.
+  Claimed:
+    Ticket:
+      Title: Commission Claimed
+      Description: Your freelancer is {user}

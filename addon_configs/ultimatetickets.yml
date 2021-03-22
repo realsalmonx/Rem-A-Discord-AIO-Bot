@@ -1,0 +1,81 @@
+Permission: Admin
+# The main permission for the ultimatetickets command
+Categories:
+  Enabled: true
+  Disable_Speaking_Until_Category_Chosen: true
+  Ping_Role: true
+  Message: Thank you for contacting us. Our {category} Team will be with you as
+    soon as possible.
+  Reminder:
+    Enabled: true
+    Notify_After: 1
+  Commissions:
+    Enabled: true
+    Channel: commissions
+    Emoji: ✅
+  Categories:
+    - Role: Support
+      Title: Normal Support
+      Discord_Category: Support
+      Emoji:
+        Text: ":man_raising_hand:"
+        Unicode: 🙋‍♂️
+      Questions:
+        - Vui lòng ghi vấn đề của bạn ở đây, đội ngũ staff sẽ hỗ trợ bạn sớm nhất có thể UwU
+    - Role: Discord Moderator
+      Title: Báo Cáo Bug, Lỗi
+      Discord_Category: Important
+      Emoji:
+        Text: ":warning:"
+        Unicode: ⚠️
+      Questions:
+        - Bạn vui lòng miêu tả về bug hoặc lỗi mà bạn tìm thấy kèm theo ảnh (nếu có), đội ngũ Developer và Admin sẽ liên hệ với bạn sớm nhất có thể. UwU
+Waiting_Responded:
+  Enabled: true
+  Waiting: Tickets
+  # Set responded to null if you have categories enabled
+  Responded: Responded
+  SupportRole: Support
+Tags:
+  Enabled: false
+  Prefix: $
+  Tags:
+    - Title: Test Tag
+      Description: This is an example of a tag for Ultimate Tickets. You can test this
+        tag by typing $test
+      Command: test
+Transcripts:
+  # Please note: These are transcripts that are hosted in the cloud
+  Enabled: true
+  Domain: https://ultimatetickets.corebot.dev
+  Channel: transcripts
+  DM_To_Creator: false
+  DM_To_Participants: true
+Response_Times:
+  Enabled: true
+  Command: response
+  SupportRole: Support
+AutoClose:
+  Enabled: true
+  Notify: 24h
+  Close: 48h
+  Message: "{user} **WARNING** ticket này sẽ tự đóng sau 24h, nếu vấn đề của bạn đã giải quyết. Vui lòng dùng !close để đóng ticket ngay bây giờ."
+ReactToOpenTicket:
+  Emoji: ✏️
+Up_Down:
+  Enabled: true
+  Permission: Staff
+  Up_Command: up
+  Down_Command: down
+Move:
+  Enabled: true
+  Command: move
+  Permission: STAFF
+Close_Ticket_On_Leave: true
+Pings:
+  User: true
+  Category_Role: true
+  Delete_After: 1
+AutoClose_Cancel:
+  Command: cancelclose
+  Permission: STAFF
