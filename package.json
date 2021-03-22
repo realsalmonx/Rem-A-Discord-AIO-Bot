@@ -16,6 +16,7 @@
         "console-stamp": "^0.2.9",
         "discord.js": "^12.2.0",
         "expr-eval": "^2.0.2",
+        "ffmpeg": "0.0.4",
         "ffmpeg-static": "^4.2.6",
         "lodash": "^4.17.15",
         "ms": "^2.1.2",

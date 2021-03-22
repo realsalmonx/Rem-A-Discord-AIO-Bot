@@ -10,7 +10,7 @@ Categories:
     Enabled: true
     Notify_After: 1
   Commissions:
-    Enabled: true
+    Enabled: false
     Channel: commissions
     Emoji: ✅
   Categories:
